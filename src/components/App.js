@@ -29,6 +29,13 @@ const App = () => {
     updateSelectionStyle(nextBackground)
   }
 
+    // Simplified state in App.js
+const [selectedColor, setSelectedColor] = useState(""); 
+
+const updateSelectedColor = (color) => {
+  setSelectedColor(color);
+};
+
   return (
     <div id="master">
       <h5 className="heading">{/* display title here */}</h5>
